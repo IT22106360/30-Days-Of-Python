@@ -1,40 +1,67 @@
+#Day 2: 30 Days of python programming
 
-# Variables in Python
-
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
-country = 'Finland'
-city = 'Helsinki'
-age = 250
-is_married = True
-skills = ['HTML', 'CSS', 'JS', 'React', 'Python']
+first_name = 'Rashmika'
+last_name = 'Rupasinghe'
+full_name = 'Rashmika Rupasinghe'
+country = 'Sri Lanka'
+city = 'Colombo'
+age = 24
+year = '2001'
+is_married = False
+is_true = True
+is_light_on = False
+skills, is_mingle = ['HTML', 'CSS', 'JS', 'React', 'Python'], False
 person_info = {
-    'firstname':'Asabeneh', 
-    'lastname':'Yetayeh', 
-    'country':'Finland',
-    'city':'Helsinki'
-    }
+    'firstname': 'Rashmika',
+    'lastname': 'Rupasinghe',
+    'country': 'Sri Lanka',
+    'city': 'Colombo' 
+}
 
-# Printing the values stored in the variables
+print(first_name, last_name, country, age, is_married, is_true, is_light_on, skills,is_mingle, person_info)
 
-print('First name:', first_name)
-print('First name length:', len(first_name))
-print('Last name: ', last_name)
-print('Last name length: ', len(last_name))
-print('Country: ', country)
-print('City: ', city)
-print('Age: ', age)
-print('Married: ', is_married)
-print('Skills: ', skills)
-print('Person information: ', person_info)
+print(*(type(v) for v in [
+    first_name, last_name, full_name, country, city, age, year,
+    is_married, is_true, is_light_on, skills, is_mingle, person_info
+]))
 
-# Declaring multiple variables in one line
+print('first name length: '+ str(len(first_name)))
+print('last name length: '+ str(len(last_name)))
 
-first_name, last_name, country, age, is_married = 'Asabeneh', 'Yetayeh', 'Helsink', 250, True
+num_one = 5
+num_two = 4
 
-print(first_name, last_name, country, age, is_married)
-print('First name:', first_name)
-print('Last name: ', last_name)
-print('Country: ', country)
-print('Age: ', age)
-print('Married: ', is_married)
+diff = num_one - num_two
+print(diff)
+
+product = num_one*num_two
+print(product)
+
+divisions = num_one/num_two
+print(divisions)
+
+remainder= num_one%num_two
+print(remainder)
+
+exp = num_one**num_two
+print(exp)
+floor_division = num_one//num_two
+print(floor_division)
+
+radius = float(input("Enter the radius: "))
+pi = 3.14
+
+area_of_circle = pi*radius**2
+circum_of_circle = 2*pi*radius
+
+print('area: '+ str(area_of_circle))
+print('circumference: '+str(circum_of_circle))
+
+first_name = input("first name: ")
+last_name = input("last name: ")
+country = input("country: ")
+age = int(input("Age: "))
+
+print(first_name, last_name, country, age)
+
+help('keywords')
